@@ -2,6 +2,7 @@
   padding: 20px;
   border-radius: 10px;
   background-image: image();
+  overflow: auto;
 }
 
 #line_ark720 .content_box ul {
@@ -12,6 +13,7 @@
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: 1px dashed black;
+  width: 100%;
 }
 
 #line_ark720 .content_box ul li marker {
@@ -33,7 +35,7 @@
 
 #line_ark720 .content_box ul li .d_row .d_col1 {
   border-radius: 10px;
-  width: 400px;
+  width: 45%;
   height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,7 +82,7 @@
 }
 
 #line_ark720 .content_box ul li .d_row .d_col2 {
-  width: calc(100% - 150px);
+  width: 55%;
   margin-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
