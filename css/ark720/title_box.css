@@ -1,0 +1,45 @@
+#line_ark720 .title_box {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#line_ark720 .title_box .user {
+  padding-top: 20px;
+  color: white;
+  text-align: right;
+  font-size: 30px;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+#line_ark720 .title_box h1 {
+  padding-bottom: 0;
+}
+
+#line_ark720 .title_box h1 img {
+  height: 120px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#line_ark720 .title_box h2 {
+  margin-top: -25px;
+}
+
+#line_ark720 .title_box h2 img {
+  height: 90px;
+  display: block;
+  margin: 0 auto;
+}
+
+#line_ark720 .title_box .title {
+  margin-top: -35px;
+}
+
+#line_ark720 .title_box .title img {
+  height: 120px;
+  display: block;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=title_box.css.map */

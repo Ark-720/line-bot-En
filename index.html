@@ -1,0 +1,165 @@
+<script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<link rel="stylesheet" type="text/css" href="./css/ark720.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="./css/ark720/nav_box.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="./css/ark720/title_box.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="./css/ark720/content_box.css" media="screen" />
+
+<!-- <div class="line_icon">
+  <a id="sendmessagebutton" style="background-image: url(./imgs/line.png)" onclick="sendmessagebutton(this.id,this.name)"></a>
+</div> -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<script>
+  liff.init({
+    liffId: '1655543201-OqJoN18Q'
+  })
+
+  function sendmessagebutton(clicked_id, clicked_name) {
+    liff.sendMessages([{
+      type: 'text',
+      text: "View 3D" + clicked_id + '\n' + clicked_name
+    }]).then(function () {
+      liff.closeWindow();
+    })
+  }
+</script>
+
+<div id="line_ark720" class="">
+  <div class="inbox container">
+    <div class="title_box">
+      <div class="user">
+        <a style="color: white; text-decoration: none" href="tel:0935050202">[ARK/Mr.Lin/ark720.art@gmail.com]</a>
+      </div>
+      <h1><img src="./imgs/title_11.png" alt="Title 11"></h1>
+      <h2><img src="./imgs/title_12.png" alt="Title 12"></h2>
+      <!-- <div class="title"><img src="./imgs/title_13.png" alt="Title 13"></div> -->
+    </div>
+
+    <div class="nav_box">
+      <div class="menu">
+        <ul>
+          <!-- <li class="">
+            <a data-remote="true" href="./index2.html">永樂拍品</a>
+          </li>
+          <li class="">
+            <a data-remote="true" href="./index4.html">大東山珊瑚</a>
+          </li>
+          <li class="">
+            <a data-remote="true" href="./index5.html">頤和園古文物</a>
+          </li> -->
+          <li class="selected">
+            <a data-remote="true" href="./index.html">ARK museum</a>
+          </li>
+          <!-- <li class="">
+            <a data-remote="true" href="./index3.html">其他收藏</a>
+          </li> -->
+        </ul>
+      </div>
+      <hr>
+    </div>
+
+    <div class="content_box">
+      <ul>
+        <table class="table table bordered table-striped" id="testTable">
+          <tbody id="items">
+          </tbody>
+        </table>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- <script>
+    window.onload = function what() {
+        $.getJSON("https://spreadsheets.google.com/feeds/list/1nVEUWvilSlC3o6cCWYXxmIbYanQuE_RxUexD0CnJ7qU/3/public/values?alt=json", function(data) {
+
+            var sheetData = data.feed.entry;
+
+            var i;
+            for (i = 0; i < sheetData.length; i++) {
+
+                var item = data.feed.entry[i]['gsx$item']['$t'];
+                var image = data.feed.entry[i]['gsx$image']['$t'];
+                var url = data.feed.entry[i]['gsx$url']['$t'];
+                var share = data.feed.entry[i]['gsx$share']['$t'];
+                var description = data.feed.entry[i]['gsx$description']['$t'];
+                var share_encode = encodeURI(share);
+                var url_encode = encodeURI(url);
+
+                if (document.getElementById("items") != null) {
+                    document.getElementById('items').innerHTML += ('<li>' + '<div class="d_row">' + '<div class="d_col1">' + '<div class="folded_image">' + '<a href="' + url + '" class="bg_center_image" style="background-image: url(' + image + ')">' + '</a>' + '<div class="c1">點 圖 觀 賞</div>' + '<div class="c2"></div>' + '<div class="c3"></div>' + '<div class="c4"></div>' + '</div>' + '</div>' + '<div class="d_col2">' + '<div class="title_text">' + '<div class="title colorY">' + item + '</div>' + '<hr>' + '<div class="text colorGy_l">' + description + '<a href="' + url + '">/Read More</a>' + '</div></div>' + '<div class="action">' + '<a class="visit_btn btnBl" id="' + item + '"name="' + url + '"onclick="sendmessagebutton(this.id, this.name)">洽詢專員</a>' + '<a class="line_btn"href="https://line.me/R/msg/text/?' + share_encode + url_encode + '">' + '<img src="./imgs/line1.png" alt="Line1">' + '</a>' + '</div>' + '</div>' + '</div>' + '</li>');
+                }
+            }
+        });
+    }
+</script> -->
+<script>
+  var data_json = [
+    {
+      item: "Cup depicting chickens in doucai colors",
+      image: "https://i.imgur.com/RIkcYcj.png",
+      url: "https://ark-720.github.io/sketchfab/model/en-cup.html",
+      share: "Sharing Cup depicting chickens in doucai colors to you!",
+      description: ""
+    },
+    {
+      item: "Underglaze-blue bowl with Sanskrit writing",
+      image: "https://i.imgur.com/hwYz1zy.png",
+      url: "https://ark-720.github.io/sketchfab/model/en-bowl.html",
+      share: "Sharing Underglaze-blue bowl with Sanskrit writing to you!",
+      description: ""
+    },
+    {
+      item: "Winged Victory of Samothrace",
+      image: "https://imgur.com/hWQZQ9D.png",
+      url: "https://ark-720.github.io/sketchfab/model/en-nike.html",
+      share: "Sharing Winged Victory of Samothrace to you!",
+      description: ""
+    },
+    {
+      item: "Celadon yi vessel, Longquan ware",
+      image: "https://i.imgur.com/tXfw5i9.png",
+      url: "https://ark-720.github.io/sketchfab/model/en-dragon.html",
+      share: "Sharing Celadon yi vessel, Longquan ware to you!",
+      description: ""
+    },
+    {
+      item: "Gilt bronze figure of Tara with Yongle inscription ",
+      image: "https://i.imgur.com/6bpGCi5.png",
+      url: "https://ark-720.github.io/sketchfab/model/en-maria.html",
+      share: "Sharing Gilt bronze figure of Tara with Yongle inscription  to you!",
+      description: ""
+    }
+  ]
+
+  for (i = 0; i < data_json.length; i++) {
+
+    var item = data_json[i].item;
+    var image = data_json[i].image;
+    var url = data_json[i].url;
+    var share = data_json[i].share;
+    var share_encode = encodeURI(share);
+    var url_encode = encodeURI(url);
+
+    if (document.getElementById("items") != null) {
+      document.getElementById('items').innerHTML += ('<li><div class="d_row"><div class="d_col1"><div class="folded_image"><a class="bg_center_image " style="background-image: url(' + image + ')"  href="' + url + '" title="' + item + '"></a>' +
+        '<div class="c1">點 圖 觀 賞</div></div></div><div class="d_col2"><div class="title_text"><div class="title colorY">' +
+        item + '</div><hr></div><div class="action"><a class="visit_btn btnBl" href="' + url + '">View 3D</a>' +
+        '</div></div></div></li>');
+    }
+    // 放View 3D</a> 後面
+    // <a class="line_btn" href="https://line.me/R/msg/text/?' + share_encode + '  ' + url_encode + '"><img src="./imgs/line1.png" alt="Line1"></a>
+  }
+</script>
