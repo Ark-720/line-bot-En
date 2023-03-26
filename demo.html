@@ -10,17 +10,6 @@
 <!-- <div class="line_icon">
   <a id="sendmessagebutton" style="background-image: url(./imgs/line.png)" onclick="sendmessagebutton(this.id,this.name)"></a>
 </div> -->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-  </div>
-</nav>
 <script>
   liff.init({
     liffId: '1655543201-OqJoN18Q'
@@ -42,8 +31,8 @@
       <div class="user">
         <a style="color: white; text-decoration: none" href="tel:0935050202">[ARK/Mr.Lin/ark720.art@gmail.com]</a>
       </div>
-      <h1><img src="./imgs/title_11.png" alt="Title 11"></h1>
-      <h2><img src="./imgs/title_12.png" alt="Title 12"></h2>
+      <h1 style="color: white; font-size: 5em;">Czech ARK 3D e-shop</h1>
+      <!-- <h2><img src="./imgs/title_12.png" alt="Title 12"></h2> -->
       <!-- <div class="title"><img src="./imgs/title_13.png" alt="Title 13"></div> -->
     </div>
 
@@ -161,7 +150,7 @@
       document.getElementById('items').innerHTML += ('<li><div class="d_row"><div class="d_col1"><div class="folded_image"><a class="bg_center_image " style="background-image: url(' + image + ')"  href="' + url + '" title="' + item + '"></a>' +
         '<div class="c1">Tap to View</div></div></div><div class="d_col2"><div class="title_text"><div class="title colorY">' +
         item + '</div><hr></div><div class="action"><a class="visit_btn btnBl" href="' + url + '">View 3D</a>' +
-        '</div></div></div></li>');
+        ' <a class="line_btn" href="https://line.me/R/msg/text/?' + share_encode + '  ' + url_encode + '"><img src="./imgs/line1.png" alt="Line1"></a></div></div></div></li>');
     }
     // 放View 3D</a> 後面
     // <a class="line_btn" href="https://line.me/R/msg/text/?' + share_encode + '  ' + url_encode + '"><img src="./imgs/line1.png" alt="Line1"></a>
@@ -169,6 +158,10 @@
 </script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  * {
+    font-family: 'Lato', sans-serif;
+  }
   #line_ark720 {
   background-image: url("./imgs/czech.jpg");
   background-size: auto 100%;
@@ -176,5 +169,11 @@
 }
 #line_ark720 .content_box ul li .d_row .d_col2 .title_text .title {
   color: white;
+}
+#line_ark720 .content_box ul li .d_row .d_col2 .title_text .title {
+  font-size: 50px;
+}
+#line_ark720 .content_box ul li .d_row .d_col2 .action .visit_btn, #line_ark720 .content_box ul li .d_row .d_col1 .folded_image .c1 {
+  font-size: 35px;
 }
 </style>
