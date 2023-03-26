@@ -59,11 +59,11 @@
           <li class="">
             <a data-remote="true" href="./index5.html">頤和園古文物</a>
           </li> -->
-          <li class="selected">
+          <li class="">
             <a data-remote="true" href="./index.html">ARK museum</a>
           </li>
-          <li class="">
-            <a data-remote="true" href="./demo.html">Glass</a>
+          <li class="selected">
+            <a data-remote="true" href="./demo.html">Gslass</a>
           </li>
           <!-- <li class="">
             <a data-remote="true" href="./index3.html">其他收藏</a>
@@ -84,67 +84,68 @@
   </div>
 </div>
 
-<!-- <script>
-    window.onload = function what() {
-        $.getJSON("https://spreadsheets.google.com/feeds/list/1nVEUWvilSlC3o6cCWYXxmIbYanQuE_RxUexD0CnJ7qU/3/public/values?alt=json", function(data) {
+<script>
+    // window.onload = function what() {
+    //     $.getJSON("https://spreadsheets.google.com/feeds/list/1nVEUWvilSlC3o6cCWYXxmIbYanQuE_RxUexD0CnJ7qU/3/public/values?alt=json", function(data) {
 
-            var sheetData = data.feed.entry;
+    //         var sheetData = data.feed.entry;
 
-            var i;
-            for (i = 0; i < sheetData.length; i++) {
+    //         var i;
+    //         for (i = 0; i < sheetData.length; i++) {
 
-                var item = data.feed.entry[i]['gsx$item']['$t'];
-                var image = data.feed.entry[i]['gsx$image']['$t'];
-                var url = data.feed.entry[i]['gsx$url']['$t'];
-                var share = data.feed.entry[i]['gsx$share']['$t'];
-                var description = data.feed.entry[i]['gsx$description']['$t'];
-                var share_encode = encodeURI(share);
-                var url_encode = encodeURI(url);
+    //             var item = data.feed.entry[i]['gsx$item']['$t'];
+    //             var image = data.feed.entry[i]['gsx$image']['$t'];
+    //             var url = data.feed.entry[i]['gsx$url']['$t'];
+    //             var share = data.feed.entry[i]['gsx$share']['$t'];
+    //             var description = data.feed.entry[i]['gsx$description']['$t'];
+    //             var share_encode = encodeURI(share);
+    //             var url_encode = encodeURI(url);
 
-                if (document.getElementById("items") != null) {
-                    document.getElementById('items').innerHTML += ('<li>' + '<div class="d_row">' + '<div class="d_col1">' + '<div class="folded_image">' + '<a href="' + url + '" class="bg_center_image" style="background-image: url(' + image + ')">' + '</a>' + '<div class="c1">點 圖 觀 賞</div>' + '<div class="c2"></div>' + '<div class="c3"></div>' + '<div class="c4"></div>' + '</div>' + '</div>' + '<div class="d_col2">' + '<div class="title_text">' + '<div class="title colorY">' + item + '</div>' + '<hr>' + '<div class="text colorGy_l">' + description + '<a href="' + url + '">/Read More</a>' + '</div></div>' + '<div class="action">' + '<a class="visit_btn btnBl" id="' + item + '"name="' + url + '"onclick="sendmessagebutton(this.id, this.name)">洽詢專員</a>' + '<a class="line_btn"href="https://line.me/R/msg/text/?' + share_encode + url_encode + '">' + '<img src="./imgs/line1.png" alt="Line1">' + '</a>' + '</div>' + '</div>' + '</div>' + '</li>');
-                }
-            }
-        });
-    }
-</script> -->
+    //             if (document.getElementById("items") != null) {
+    //                 document.getElementById('items').innerHTML += ('<li>' + '<div class="d_row">' + '<div class="d_col1">' + '<div class="folded_image">' + '<a href="' + url + '" class="bg_center_image" style="background-image: url(' + image + ')">' + '</a>' + '<div class="c1">點 圖 觀 賞</div>' + '<div class="c2"></div>' + '<div class="c3"></div>' + '<div class="c4"></div>' + '</div>' + '</div>' + '<div class="d_col2">' + '<div class="title_text">' + '<div class="title colorY">' + item + '</div>' + '<hr>' + '<div class="text colorGy_l">' + description + '<a href="' + url + '">/Read More</a>' + '</div></div>' + '<div class="action">' + '<a class="visit_btn btnBl" id="' + item + '"name="' + url + '"onclick="sendmessagebutton(this.id, this.name)">洽詢專員</a>' + '<a class="line_btn"href="https://line.me/R/msg/text/?' + share_encode + url_encode + '">' + '<img src="./imgs/line1.png" alt="Line1">' + '</a>' + '</div>' + '</div>' + '</div>' + '</li>');
+    //             }
+    //         }
+    //     });
+    // }
+</script>
 <script>
   var data_json = [
     {
-      item: "Cup depicting chickens in doucai colors",
-      image: "https://i.imgur.com/RIkcYcj.png",
-      url: "https://ark-720.github.io/sketchfab/model/en-cup.html",
-      share: "Sharing Cup depicting chickens in doucai colors to you!",
+      item: "Crystal vase",
+      image: "https://i.imgur.com/8SyiyEA.png",
+      url: "https://sketchfab.com/3d-models/crystal-vase-c49f0ef5da0549ee9280ea94ae75eca0",
+      share: "Sharing Crystal vase to you!",
       description: ""
     },
     {
-      item: "Underglaze-blue bowl with Sanskrit writing",
-      image: "https://i.imgur.com/hwYz1zy.png",
-      url: "https://ark-720.github.io/sketchfab/model/en-bowl.html",
-      share: "Sharing Underglaze-blue bowl with Sanskrit writing to you!",
+      item: "Cristal Vase",
+      image: "https://i.imgur.com/h7NSU9v.png",
+      url: "https://sketchfab.com/3d-models/cristal-vase-d88066f3376f4f94971793cddbb7cc70",
+      share: "Sharing Cristal Vase to you!",
       description: ""
     },
     {
-      item: "Winged Victory of Samothrace",
-      image: "https://imgur.com/hWQZQ9D.png",
-      url: "https://ark-720.github.io/sketchfab/model/en-nike.html",
-      share: "Sharing Winged Victory of Samothrace to you!",
+      item: "Cirrus Glass Lamp",
+      image: "https://i.imgur.com/Esi8TYS.png",
+      url: "https://sketchfab.com/3d-models/cirrus-glass-lamp-4a613d7cdecb4d87a59558591be170b4",
+      share: "Sharing Cirrus Glass Lamp to you!",
+      description: ""
+    },
+    {
+      item: "Goblet",
+      image: "https://i.imgur.com/cJZrHMH.png",
+      url: "https://sketchfab.com/3d-models/old-goblet-8f9d78b766f645e28ec173180f350bce",
+      share: "Sharing Goblet to you!",
+      description: ""
+    },
+    {
+      item: "Crystal Goblet",
+      image: "https://i.imgur.com/o5y5vr5.png",
+      url: "https://sketchfab.com/3d-models/crystal-goblet-f142b199f7c54490ad716b6f2bb2fe54",
+      share: "Sharing Crystal Goblet to you!",
       description: ""
     }
-    // {
-    //   item: "Celadon yi vessel, Longquan ware",
-    //   image: "https://i.imgur.com/tXfw5i9.png",
-    //   url: "https://ark-720.github.io/sketchfab/model/en-dragon.html",
-    //   share: "Sharing Celadon yi vessel, Longquan ware to you!",
-    //   description: ""
-    // },
-    // {
-    //   item: "Gilt bronze figure of Tara with Yongle inscription ",
-    //   image: "https://i.imgur.com/6bpGCi5.png",
-    //   url: "https://ark-720.github.io/sketchfab/model/en-maria.html",
-    //   share: "Sharing Gilt bronze figure of Tara with Yongle inscription  to you!",
-    //   description: ""
-    // }
+
   ]
 
   for (i = 0; i < data_json.length; i++) {
